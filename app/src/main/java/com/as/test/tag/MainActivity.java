@@ -5,10 +5,6 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.as.test.tag.Tag;
-import com.as.test.tag.TagListView;
-import com.as.test.tag.TagView;
-
 public class MainActivity extends Activity {
 
 	private TagListView mTagListView;
@@ -29,7 +25,6 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onTagClick(TagView tagView, Tag tag) {
-				// TODO Auto-generated method stub
 				for (int i = 0; i < mTags.size(); i++) {
 					Tag t = mTags.get(i);
 					if (t.getId() == tag.getId()) {

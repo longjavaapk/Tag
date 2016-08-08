@@ -1,6 +1,5 @@
 package com.as.test.tag;
 
-import com.as.test.tag.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;

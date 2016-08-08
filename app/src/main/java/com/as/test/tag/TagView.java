@@ -1,7 +1,5 @@
 package com.as.test.tag;
 
-import com.as.test.tag.R;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ToggleButton;

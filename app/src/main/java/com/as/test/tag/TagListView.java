@@ -1,11 +1,7 @@
-/**
- * 
- */
 package com.as.test.tag;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.as.test.tag.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -13,8 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.CompoundButton;
 
-/**
- */
 public class TagListView extends FlowLayout implements OnClickListener {
 
 	private boolean mIsDeleteMode = false;
@@ -24,30 +18,18 @@ public class TagListView extends FlowLayout implements OnClickListener {
 	private int mTagViewTextColorResId;
 	private final List<Tag> mTags = new ArrayList<Tag>();
 
-	/**
-	 * @param context
-	 */
 	public TagListView(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
 		init();
 	}
 
-	/**
-	 * @param context
-	 * @param attributeSet
-	 */
 	public TagListView(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
 		// TODO Auto-generated constructor stub
 		init();
 	}
 
-	/**
-	 * @param context
-	 * @param attributeSet
-	 * @param defStyle
-	 */
 	public TagListView(Context context, AttributeSet attributeSet, int defStyle) {
 		super(context, attributeSet, defStyle);
 		// TODO Auto-generated constructor stub
@@ -70,7 +52,7 @@ public class TagListView extends FlowLayout implements OnClickListener {
 
 	private void inflateTagView(final Tag t, boolean b) {
 
-		TagView localTagView = (TagView) View.inflate(getContext(),//////+ tag ����Ƕ��һ�� ʵ�� tag���־���
+		TagView localTagView = (TagView) View.inflate(getContext(),
 				R.layout.tag, null);
 		localTagView.setText(t.getTitle());
 		localTagView.setTag(t);
@@ -104,7 +86,7 @@ public class TagListView extends FlowLayout implements OnClickListener {
 			localTagView.setCompoundDrawablesWithIntrinsicBounds(
 					t.getLeftDrawableResId(), 0, t.getRightDrawableResId(), 0);
 		}
-		localTagView.setOnClickListener(this);///////////+����tag�Ƿ�ѡ�иı�localTagView������ɫ
+		localTagView.setOnClickListener(this);
 		localTagView
 				.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 					public void onCheckedChanged(
@@ -122,7 +104,7 @@ public class TagListView extends FlowLayout implements OnClickListener {
 		addView(localTagView);
 	}
 
-	public void addTag(int i, String s) {//////////////////////+bĬ�ϸ�Ϊtrue  Ĭ�Ͽɵ��
+	public void addTag(int i, String s) {
 		addTag(i, s, true);
 	}
 
