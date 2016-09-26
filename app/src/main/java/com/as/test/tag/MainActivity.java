@@ -4,7 +4,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
-
+//add test tag
 public class MainActivity extends Activity {
 
 	private TagListView mTagListView;
